@@ -1,12 +1,19 @@
 # inv-lint
+> Invisible Technologies Eslint Package
 
-# Setup
+# Install
 
-1. Add `WEBHOOK_PATH` environmental variable to your project on circleCI.
+```
+yarn add -D invisible-tech/inv-lint
+# or
+npm install -D invisible-tech/inv-lint
+```
 
-    To do this you will have to:
-    
-    - Go to `https://circleci.com/gh/invisible-tech/<your-project-name>/edit#env-vars` (replace \<your-project-name\>, e.g. gear)
-    - Click on `Import Variable(s)`.
-    - Select `WEBHOOK_PATH`.
-      - If you don't have permission to do that, ask your superior to do it!
+# Usage
+
+1. Add `inv-lint` to your lint script on `package.json`
+  ```json
+  // It should look something like:
+  "lint": "inv-lint",
+  "pretest": "yarn run lint",
+  ``` 
