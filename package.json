@@ -36,9 +36,8 @@
   "repository": "git@github.com:invisible-tech/inv-lint.git",
   "scripts": {
     "builddoc": "./node_modules/.bin/jsdoc -c ./.jsdoc.json",
-    "lint": "eslint --cache -f node_modules/eslint-formatter-pretty scripts src test",
-    "prepublish": "nsp check",
-    "test": "yarn run lint"
+    "lint": "eslint --cache -f node_modules/eslint-formatter-pretty scripts src",
+    "prepublish": "nsp check"
   },
   "dependencies": {
     "eslint-plugin-jsx-a11y": "^5.1.1"
