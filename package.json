@@ -2,7 +2,7 @@
   "name": "@invisible/eslint-config",
   "license": "MIT",
   "version": "1.0.0",
-  "description": "",
+  "description": "Invisible Rules",
   "engines": {
     "node": "^8.5.0"
   },
