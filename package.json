@@ -42,7 +42,6 @@
     "prepublish": "nsp check"
   },
   "dependencies": {
-    "eslint": "^4.7.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-formatter-pretty": "^1.3.0",
     "eslint-plugin-import": "^2.7.0",
@@ -50,5 +49,8 @@
     "eslint-plugin-lodash-fp": "^2.1.3",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.7.1"
   }
 }
