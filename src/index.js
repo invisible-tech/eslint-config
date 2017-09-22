@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable quote-props */
+
 module.exports = {
   extends: [
     'plugin:lodash-fp/recommended',
@@ -29,11 +31,11 @@ module.exports = {
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'consistent-return': 'off',
     'comma-dangle': ['error', {
-      'arrays': 'always-multiline',
-      'objects': 'always-multiline',
-      'imports': 'always-multiline',
-      'exports': 'always-multiline',
-      'functions': 'ignore',
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'ignore',
     }],
     'func-names': 'off',
     'generator-star-spacing': ['error', 'after'],
