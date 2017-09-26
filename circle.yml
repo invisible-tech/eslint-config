@@ -1,6 +1,4 @@
 dependencies:
-  pre:
-    - 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
   override:
     - yarn
 
@@ -13,7 +11,7 @@ machine:
     NODE_ENV: test
 
   node:
-    version: "8.4.0"
+    version: "8.5.0"
 
   timezone: America/Los_Angeles
 
@@ -25,4 +23,5 @@ deployment:
   release:
     branch: master
     commands:
-      - npm publish
+      - 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
+      - npm publish --access=public
