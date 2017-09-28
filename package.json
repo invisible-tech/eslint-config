@@ -30,7 +30,7 @@
     "builddoc": "./node_modules/.bin/jsdoc -c ./.jsdoc.json",
     "lint": "eslint --cache -f node_modules/eslint-formatter-pretty --ignore-path .gitignore .",
     "test": "npm run lint",
-    "posttest": "assert-version-bump"
+    "posttest": "assert-version-bump && nsp check"
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^12.0.1",
