@@ -68,6 +68,14 @@
   "settings": {
     "lodash": {
       "pragma": "fp"
+    },
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "."
+        ]
+      }
     }
   }
 }
