@@ -6,7 +6,7 @@
   },
   "extends": [
     "plugin:lodash-fp/recommended",
-    "airbnb/base"
+    "airbnb-base"
   ],
   "parserOptions": {
     "ecmaVersion": 8,
@@ -33,7 +33,6 @@
     "global-require": "off",
     "guard-for-in": "off",
     "import/no-dynamic-require": "off",
-    "import/no-extraneous-dependencies": "off",
     "indent": ["error", 2, {
       "CallExpression": { "arguments": "first" },
       "SwitchCase": 1
@@ -57,8 +56,6 @@
     "promise/param-names": "error",
     "require-yield": "off",
     "semi": ["error","never"],
-    "space-before-function-paren": ["error", { "anonymous": "never", "asyncArrow": "always", "named": "never" }],
-    "space-in-parens": "off",
     "space-unary-ops": ["error", {
       "nonwords": false,
       "overrides": { "!": true },
