@@ -1,7 +1,7 @@
 {
   "name": "@invisible/eslint-config",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Invisible Rules",
   "engines": {
     "node": "^8.5.0"
@@ -18,6 +18,7 @@
     "eslintplugin"
   ],
   "devDependencies": {
+    "@invisible/publish": "^1.1.1",
     "docdash": "^0.4.0",
     "eslint": "^4.7.1",
     "jsdoc": "^3.5.4",
@@ -29,7 +30,7 @@
     "builddoc": "./node_modules/.bin/jsdoc -c ./.jsdoc.json",
     "lint": "eslint --cache -f node_modules/eslint-formatter-pretty --ignore-path .gitignore .",
     "test": "npm run lint",
-    "prepublish": "nsp check"
+    "posttest": "assert-version-bump && nsp check"
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^12.0.1",
