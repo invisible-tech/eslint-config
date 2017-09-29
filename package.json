@@ -12,9 +12,6 @@
     "name": "Invisible Technologies",
     "url": "https://github.com/invisible-tech"
   },
-  "files": [
-    "."
-  ],
   "main": "index.js",
   "keywords": [
     "eslint",
