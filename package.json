@@ -1,7 +1,7 @@
 {
   "name": "@invisible/eslint-config",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Invisible Rules",
   "engines": {
     "node": "^8.5.0"
@@ -13,9 +13,9 @@
     "url": "https://github.com/invisible-tech"
   },
   "files": [
-    "src"
+    "."
   ],
-  "main": "src/index.js",
+  "main": "index.js",
   "keywords": [
     "eslint",
     "eslintplugin"
