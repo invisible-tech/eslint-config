@@ -49,6 +49,7 @@
     "no-use-before-define": "off",
     "one-var": [ "error", { "initialized": "never", "uninitialized": "always" }],
     "one-var-declaration-per-line": ["error", "initializations"],
+    "object-curly-newline": ["error", { "consistent": true }],
     "prefer-rest-params": "off",
     "promise/always-return": "error",
     "promise/catch-or-return": "error",
