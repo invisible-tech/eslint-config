@@ -13,9 +13,9 @@
     "url": "https://github.com/invisible-tech"
   },
   "files": [
-    "src"
+    "."
   ],
-  "main": "src/index.js",
+  "main": "index.js",
   "keywords": [
     "eslint",
     "eslintplugin"

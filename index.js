@@ -24,6 +24,14 @@ module.exports = {
     lodash: {
       pragma: 'fp',
     },
+    "import/resolver": {
+      node: {
+        moduleDirectory: [
+          'node_modules',
+          '.'
+        ]
+      }
+    }
   },
   rules: {
     'array-bracket-spacing': 'off',
