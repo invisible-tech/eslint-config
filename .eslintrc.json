@@ -29,10 +29,12 @@
     }],
     "consistent-return": "off",
     "func-names": "off",
+    "function-paren-newline": ["error", "consistent"],
     "generator-star-spacing": ["error", "after"],
     "global-require": "off",
     "guard-for-in": "off",
     "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/test/**"] }],
     "indent": ["error", 2, {
       "CallExpression": { "arguments": "first" },
       "SwitchCase": 1
