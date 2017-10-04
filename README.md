@@ -1,4 +1,7 @@
 # @invisible/eslint-config
+
+[![CircleCI](https://circleci.com/gh/invisible-tech/eslint-config/tree/master.svg?style=svg)](https://circleci.com/gh/invisible-tech/eslint-config/tree/master)
+
 > Invisible Technologies Eslint Config
 
 # Install
