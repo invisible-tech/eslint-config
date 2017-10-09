@@ -49,6 +49,7 @@
     "no-underscore-dangle": "off",
     "no-unused-vars": ["error", { "args": "after-used", "vars": "all" }],
     "no-use-before-define": "off",
+    "no-warning-comments": ["error"],
     "one-var": [ "error", { "initialized": "never", "uninitialized": "always" }],
     "one-var-declaration-per-line": ["error", "initializations"],
     "object-curly-newline": ["error", { "consistent": true }],
