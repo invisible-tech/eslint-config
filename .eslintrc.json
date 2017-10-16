@@ -60,6 +60,7 @@
     "promise/param-names": "error",
     "require-yield": "off",
     "semi": ["error","never"],
+    "semi-style": ["error", "first"],
     "space-unary-ops": ["error", {
       "nonwords": false,
       "overrides": { "!": true },
