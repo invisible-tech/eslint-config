@@ -6,6 +6,7 @@
   },
   "extends": [
     "plugin:lodash-fp/recommended",
+    "plugin:unicorn/recommended",
     "airbnb-base"
   ],
   "parserOptions": {
@@ -14,7 +15,8 @@
   },
   "plugins": [
     "lodash-fp",
-    "promise"
+    "promise",
+    "unicorn"
   ],
   "rules": {
     "array-bracket-spacing": "off",
@@ -67,6 +69,12 @@
       "words": true
     }],
     "strict": ["error", "global"],
+    "unicorn/filename-case": ["error", { "case": "camelCase" }],
+    "unicorn/catch-error-name": ["error", { "name": "err" }],
+    "unicorn/throw-new-error": "off",
+    "unicorn/no-fn-reference-in-iterator": "off",
+    "unicorn/new-for-builtins": "off",
+    "unicorn/regex-shorthand": "off",
     "valid-jsdoc": "error"
   },
   "settings": {
