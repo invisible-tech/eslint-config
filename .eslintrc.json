@@ -37,6 +37,9 @@
     "guard-for-in": "off",
     "import/no-dynamic-require": "off",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/test/**"] }],
+    "import/order": [ "error", { 
+      "groups": [ "builtin", "external", "internal", [ "parent", "sibling" ], "index" ]
+    }],
     "indent": ["error", 2, {
       "CallExpression": { "arguments": "first" },
       "SwitchCase": 1
@@ -63,6 +66,7 @@
     "require-yield": "off",
     "semi": ["error","never"],
     "semi-style": ["error", "first"],
+    "sort-keys": [ "error", "asc", { "caseSensitive": true, "natural": false } ],
     "space-unary-ops": ["error", {
       "nonwords": false,
       "overrides": { "!": true },
