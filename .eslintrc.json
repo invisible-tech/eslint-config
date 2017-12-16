@@ -47,7 +47,7 @@
     "max-len": "off",
     "newline-per-chained-call": "off",
     "no-continue": "off",
-    "no-multiple-empty-lines": "off",
+    "no-multiple-empty-lines": [ "error", { "max": 1, "maxEOF": 0 } ],
     "no-param-reassign": ["error", { "props": false }],
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-restricted-syntax": ["error", "ClassDeclaration"],
