@@ -37,7 +37,7 @@
     "guard-for-in": "off",
     "import/no-dynamic-require": "off",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/test/**"] }],
-    "import/order": [ "error", { 
+    "import/order": [ "error", {
       "groups": [ "builtin", "external", "internal", [ "parent", "sibling" ], "index" ]
     }],
     "indent": ["error", 2, {
@@ -72,8 +72,8 @@
       "words": true
     }],
     "strict": ["error", "global"],
-    "unicorn/filename-case": ["error", { "case": "camelCase" }],
     "unicorn/catch-error-name": ["error", { "name": "err" }],
+    "unicorn/filename-case": "off",
     "unicorn/throw-new-error": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/new-for-builtins": "off",
