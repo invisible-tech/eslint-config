@@ -36,7 +36,7 @@
     "global-require": "off",
     "guard-for-in": "off",
     "import/no-dynamic-require": "off",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/test/**"] }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/test/**", "/scripts/"] }],
     "import/order": [ "error", {
       "groups": [ "builtin", "external", "internal", [ "parent", "sibling" ], "index" ]
     }],
