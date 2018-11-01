@@ -68,3 +68,5 @@ lcov.info
 # eslint cache
 .eslint-cache
 .eslintcache
+
+.nvrmrc
