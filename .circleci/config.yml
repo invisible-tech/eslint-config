@@ -3,20 +3,18 @@ jobs:
   checkout:
     working_directory: ~/project
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:10
     steps:
       - checkout
       - restore_cache:
-          keys:
-          - v2-dependencies-{{ checksum "yarn.lock" }}
-          - v2-dependencies-
+          key: v2-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Install Dependencies
-          command: ls && yarn install
+          command: ls && npm install
       - save_cache:
           paths:
             - node_modules
-          key: v2-dependencies-{{ checksum "yarn.lock" }}
+          key: v2-dependencies-{{ checksum "package-lock.json" }}
       - persist_to_workspace:
           root: .
           paths:
@@ -26,7 +24,7 @@ jobs:
   test:
     working_directory: ~/project
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:10
     environment:
       - LOGGER_LEVEL: silly
       - NODE_ENV: test
@@ -35,12 +33,12 @@ jobs:
           at: ~/project
       - run:
           name: Run Tests
-          command: yarn test
+          command: npm run test
 
   publish:
     working_directory: ~/project
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:10
     environment:
       - NODE_ENV: production
     steps:
@@ -49,6 +47,9 @@ jobs:
       - run:
           name: Publish NPM Package
           command: ./node_modules/.bin/publish
+      - run:
+          name: Publish Changelog
+          command: ./node_modules/.bin/push-changelog-update || true
 
 workflows:
   version: 2
