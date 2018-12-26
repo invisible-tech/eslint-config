@@ -1,12 +1,13 @@
 {
   "name": "@invisible/eslint-config",
   "license": "MIT",
-  "version": "1.3.6",
+  "version": "1.3.8",
   "description": "Invisible Rules",
   "engines": {
-    "node": "^8.10.0"
+    "node": ">=8.10.0",
+    "npm": ">=6.0.0"
   },
-  "homepage": "",
+  "homepage": "https://github.com/invisible-tech/eslint-config",
   "author": {
     "email": "tng@invisible.email",
     "name": "Invisible Technologies",
@@ -18,16 +19,15 @@
     "eslintplugin"
   ],
   "devDependencies": {
-    "@invisible/publish": "^2.0.0",
-    "eslint": "^5.8.0",
-    "nsp": "^3.2.1",
-    "yarn": "^1.12.1"
+    "@invisible/changelog-update": "^1.2.2",
+    "@invisible/publish": "^2.0.4",
+    "eslint": "^5.8.0"
   },
-  "repository": "git@github.com:invisible-tech/inv-lint.git",
+  "repository": "git@github.com:invisible-tech/eslint-config.git",
   "scripts": {
     "lint": "eslint --cache -f node_modules/eslint-formatter-pretty --ignore-path .gitignore .",
     "test": "npm run lint",
-    "posttest": "assert-version-bump && nsp check"
+    "posttest": "assert-version-bump && assert-changelog-update && npm audit"
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^12.0.1",
@@ -39,5 +39,9 @@
   },
   "peerDependencies": {
     "eslint": ">=4.7.1"
+  },
+  "changelogUpdate": {
+    "iconEmoji": "pencil",
+    "slackbotName": "Invisible Eslint Config"
   }
 }
