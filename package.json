@@ -19,9 +19,9 @@
     "eslintplugin"
   ],
   "devDependencies": {
-    "@invisible/changelog-update": "^1.2.2",
-    "@invisible/publish": "^2.0.4",
-    "eslint": "^5.8.0"
+    "@invisible/changelog-update": "1.2.2",
+    "@invisible/publish": "2.0.4",
+    "eslint": "5.11.0"
   },
   "repository": "git@github.com:invisible-tech/eslint-config.git",
   "scripts": {
