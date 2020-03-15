@@ -30,7 +30,7 @@
     "posttest": "assert-version-bump && assert-changelog-update && npm audit"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-formatter-pretty": "^1.3.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-lodash-fp": "^2.1.3",
