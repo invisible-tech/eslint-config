@@ -1,27 +1,17 @@
-## Description of the change
+# Feature or Bug Fix Description
 
-> Description here
+- Include link to jira ticket
+- What are you adding? Include screenshots or gifs if it involves frontend changes
 
-## Type of change
-- [ ] Bug fix (non-breaking change that fixes an issue)
-- [ ] New feature (non-breaking change that adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+# Security Implications
 
-## Related issues
+- Does this affect our security? If so, how?
 
-> Fix [#1]() 
+# Before you request review:
 
-## Checklists
+- [ ] Perform a self review to catch stupid mistakes (like leaving in commented code)
+- [ ] Ensure code contains relevant tests, and all new and existing tests pass
+- [ ] Ensure linting and type checking passes (`yarn lint:fix && yarn check-types`)
+- [ ] Ensure commit messages follow [semantic commit message format](https://seesparkbox.com/foundry/semantic_commit_messages)
 
-### Development
-
-- [ ] Lint rules pass locally
-- [ ] The code changed/added as part of this pull request has been covered with tests
-- [ ] All tests related to the changed code pass in development
-
-### Code review 
-
-- [ ]  This pull request has a descriptive title and information useful to a reviewer. There may be a screenshot or screencast attached
-- [ ] "Ready for review" label attached to the PR and reviewers mentioned in a comment
-- [ ] Changes have been reviewed by at least one other engineer
-- [ ] Issue from task tracker has a link to this pull request 
+Note: The above (aside from self-review) are checked automatically via Github Actions, so they will prevent you from merging. Save you and your reviewer some time and fix them before requesting review.

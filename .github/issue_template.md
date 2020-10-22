@@ -10,8 +10,3 @@
   1.
   1.
 
-## Specifications
-
-  - Version:
-  - Platform:
-  - Subsystem:
